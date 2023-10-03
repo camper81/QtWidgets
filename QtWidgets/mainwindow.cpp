@@ -1,14 +1,15 @@
 #include "mainwindow.h"
-#include "switchslider.h"
+#include "ui_example.h"
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
+Widget::Widget(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::Widget)
 {
-    SwitchSlider* slider = new SwitchSlider(this);
-    setCentralWidget(slider);
+    ui->setupUi(this);
 }
 
-MainWindow::~MainWindow()
+Widget::~Widget()
 {
+    delete ui;
 }
 

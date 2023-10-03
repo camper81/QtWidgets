@@ -11,10 +11,12 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    pressedbutton.cpp \
     switchslider.cpp
 
 HEADERS += \
     mainwindow.h \
+    pressedbutton.h \
     switchslider.h
 
 # Default rules for deployment.
